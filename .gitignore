@@ -1,0 +1,6 @@
+*.beam
+priv/*.so
+priv/lib/*
+c_src/*.o
+*.sw[pon]
+erl_crash.dump
