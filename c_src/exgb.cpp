@@ -134,7 +134,7 @@ ei_x_buff *do_load_model(state *st, char *args, int index) {
     ei_x_new_with_version(x);
 
     try {
-        xgboost::learner::BoostLearner *learner = (xgboost::learner::BoostLearner *)malloc(sizeof(xgboost::learner::BoostLearner));
+        xgboost::learner::BoostLearner *learner = new xgboost::learner::BoostLearner();
         learner->LoadModel(model);
 
         st->models[st->model_idx] = learner;
